@@ -20,9 +20,17 @@ public class MenuController {
 	MenuService menuService;
 	
 	@GetMapping
-	public ResponseEntity<?> insertSurvey() {
+	public ResponseEntity<?> getAllMenu() {
 		List<Menu> menuList = menuService.getAllMenu();
 		return ResponseEntity.status(HttpStatus.OK).body(menuList);
 	}
+	
+	@GetMapping("/sub")
+	public ResponseEntity<?> getAllSubMenu() {
+		List<Menu> menuList = menuService.getAllSubMenu();
+		return ResponseEntity.status(HttpStatus.OK).body(menuList);
+	}
+	
+	
 	
 }

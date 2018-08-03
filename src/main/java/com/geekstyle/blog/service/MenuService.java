@@ -8,4 +8,6 @@ public interface MenuService {
 	
 	public List<Menu> getAllMenu();
 	
+	public List<Menu> getAllSubMenu();
+	
 }

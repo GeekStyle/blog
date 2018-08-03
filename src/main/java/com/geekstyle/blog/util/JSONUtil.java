@@ -37,8 +37,4 @@ public class JSONUtil {
 		return t;
 	}
 	
-	public static void main(String[] args) {
-		System.out.println(toJSONString(new Date()));
-	}
-	
 }

@@ -33,4 +33,9 @@ public class MenuServiceImpl implements MenuService {
 		return resultMenuList;
 	}
 
+	@Override
+	public List<Menu> getAllSubMenu() {
+		return	menuDao.getAllSubMenu();	
+	}
+
 }
