@@ -15,4 +15,7 @@ public interface MenuDao {
 	
 	@Select("select id,pid,name,url,icon,i18n_key i18nKey,create_time createTime from menu where pid != 0")
 	public List<Menu> getAllSubMenu();
+	
+	@Select("select id,pid,name,url,icon,i18n_key i18nKey,create_time createTime from menu where pid = 0")
+	public List<Menu> getAllMainMenu();
 }

@@ -35,7 +35,12 @@ public class MenuServiceImpl implements MenuService {
 
 	@Override
 	public List<Menu> getAllSubMenu() {
-		return	menuDao.getAllSubMenu();	
+		return menuDao.getAllSubMenu();	
+	}
+
+	@Override
+	public List<Menu> getAllMainMenu() {
+		return menuDao.getAllMainMenu();	
 	}
 
 }

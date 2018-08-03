@@ -31,6 +31,12 @@ public class MenuController {
 		return ResponseEntity.status(HttpStatus.OK).body(menuList);
 	}
 	
+	@GetMapping("/main")
+	public ResponseEntity<?> getAllMainMenu() {
+		List<Menu> menuList = menuService.getAllMainMenu();
+		return ResponseEntity.status(HttpStatus.OK).body(menuList);
+	}
+	
 	
 	
 }
